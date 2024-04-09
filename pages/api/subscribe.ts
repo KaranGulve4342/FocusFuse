@@ -9,7 +9,8 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     const { email } = req.body;
 
     // Path to the file where you want to store the emails
-    const filePath = path.join(process.cwd(), 'email.txt');
+    // const filePath = path.join(process.cwd(), 'email.txt');
+    const filePath = path.join(process.cwd(), 'https://github.com/KaranGulve4342/FocusFuse/blob/main/email.txt');
 
     // Write the email to the file
     fs.appendFile(filePath, `${email}\n`, (err) => {
