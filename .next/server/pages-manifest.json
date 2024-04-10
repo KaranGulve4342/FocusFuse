@@ -2,9 +2,9 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/blog": "pages/blog.js",
+  "/blog/[...slug]": "pages/blog/[...slug].js",
   "/": "pages/index.js",
   "/api/subscribe": "pages/api/subscribe.js",
-  "/404": "pages/404.js",
-  "/manifesto": "pages/manifesto.js",
-  "/blog": "pages/blog.js"
+  "/manifesto": "pages/manifesto.js"
 }
