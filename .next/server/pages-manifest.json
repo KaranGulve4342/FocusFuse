@@ -1,10 +1,7 @@
 {
-  "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
+  "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
-  "/blog": "pages/blog.js",
-  "/blog/[...slug]": "pages/blog/[...slug].js",
   "/": "pages/index.js",
-  "/api/subscribe": "pages/api/subscribe.js",
-  "/manifesto": "pages/manifesto.js"
+  "/nation": "pages/nation.js"
 }

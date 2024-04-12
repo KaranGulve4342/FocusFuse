@@ -6,16 +6,38 @@ import Image from 'next/image'
 
 const memberList = [
     {
-        name: "Taric Ov",
+        name: "Kartik Kunjekar",
         about: "SE/Co-founder",
         rank: "minister",
         nation_title: "The fitst citizen & the real Samurai",
-        img: "/static/images/me.jpeg",
-        linkedin: "https://linkedin.com/in/taricov",
-        twitter: "https://twitter.com/taric_ov",
+        img: "/static/images/karan.png",
+        linkedin: "https://linkedin.com/in/kartik-kunjekar-6a8370258",
+        twitter: "https://twitter.com/frostprince_3",
         facebook: "",
-        github: "https://github.com/taricov",
+        github: "https://github.com/FrostPrince003",
     },
+    {
+        name: "Sanchit Chavan",
+        about: "SE/Co-founder",
+        rank: "minister",
+        nation_title: "The fitst citizen & the real Samurai",
+        img: "/static/images/Sanchit.jpg",
+        linkedin: "https://linkedin.com/in/sanchit-chavan-122292258",
+        twitter: "https://twitter.com/Sanchitchavan36",
+        facebook: "",
+        github: "https://github.com/Sanchit3636",
+    },
+    {
+        name: "Karan Gulve",
+        about: "SE/Co-founder",
+        rank: "minister",
+        nation_title: "The fitst citizen & the real Samurai",
+        img: "/static/images/Profile photo.png",
+        linkedin: "https://linkedin.com/in/karangulve4342",
+        twitter: "https://twitter.com/KaranGulve4342",
+        facebook: "",
+        github: "https://github.com/KaranGulve4342",
+    }
     // {
     //     name: "Bonnie Brown",
     //     about: "CEO/Co-founder",
@@ -38,19 +60,19 @@ export default function Projects() {
     <section className="bg-white dark:bg-gray-900">
   <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
       <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
-          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Nation</h2>
+          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Team</h2>
           <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">This is just the board of members 👩‍👩‍👦‍👦 all those people who have been on the show or contributed to it 🏅 along side with their ranks/titles 'cuz they all belong to a nation ❤️ and they all citizens 😀</p>
       </div> 
-      <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="grid gap-12 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 ">
          {
             memberList.map(member => (
                 <div className="text-center text-gray-500 dark:text-gray-400">
-               <Image width="100" height="100"  className="mx-auto mb-4 w-20 h-30 rounded-full" src={member.img} alt="Bonnie Avatar"/>
+               <Image width="200" height="200"  className="mx-auto mb-4 w-35 h-50 rounded-full" src={member.img} alt="Bonnie Avatar"/>
               <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <a href="#">{member.name}</a>
               </h3>
-              <p className='text-sm px-[3px] py-[2px] bg-gray-800 dark:bg-gray-100 text-gray-100 dark:text-gray-800 rounded-lg'>{member.about}</p>
-              <p className="capitalize">{member.nation_title}</p>
+              <p className='text-sm px-[3px] py-[3px] bg-gray-800 dark:bg-gray-100 text-gray-100 dark:text-gray-800 rounded-lg cursor-pointer'>{member.about}</p>
+              {/* <p className="capitalize">{member.nation_title}</p> */}
               <ul className="flex justify-center mt-4 space-x-4">
               {!member.facebook ? null : <li>
                       <a href={member.facebook} className="text-[#39569c] hover:text-gray-900 dark:hover:text-white">

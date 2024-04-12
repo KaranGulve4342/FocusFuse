@@ -30,8 +30,8 @@ export default function Footer() {
       </path>
     </pattern>
   </defs>
-  <text className='select-none' text-anchor="middle" x="50" y="15" font-size="17" fill="white" fill-opacity="0.1">Listen</text>
-  <text className='select-none' text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="1">Listen</text>
+  <text className='select-none' text-anchor="middle" x="50" y="15" font-size="17" fill="white" fill-opacity="0.1">Hustle</text>
+  <text className='select-none' text-anchor="middle" x="50" y="15" font-size="17" fill="url(#wave)"  fill-opacity="1">Hustle</text>
 </svg>
 
 
