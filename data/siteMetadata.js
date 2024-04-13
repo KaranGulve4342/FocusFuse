@@ -2,15 +2,15 @@
 
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'FocusFuse',
+  title: 'Deveekly',
   author: 'Team 7',
-  headerTitle: 'The Podcast and newsletter focuses on their current journey and affairs',
-  description: 'Podcast and blog about tech, AI, and the future of technology. Hosted by Team 7 tech enthusiast, the show explores the latest tech trends, ethical implications of AI, and more.',
+  headerTitle: 'The newsletter focuses on their current emerging technologies and the future of technology.',
+  description: 'Newsletter about tech, AI, and the future of technology. Hosted by Team 7 tech enthusiast, the show explores the latest tech trends, ethical implications of AI, and more.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   // siteUrl: 'https://thesamuraination.com/',
   // siteRepo: 'https://github.com/taricov/Nexjs_MDX_TSN-podcast-blog',
-  // siteLogo: '/public/static/images/logo.png',
+  siteLogo: '/public/static/favicons/favicon.png',
   // image: '/static/images/me.png',
   // socialBanner: '/static/images/twitter-card.png',
   // email: 'taricov@gmail.com',
@@ -27,7 +27,7 @@ const siteMetadata = {
   // soundcloudLink: 'https://soundcloud.com/samurai-nation-664714853/sets',
   siteUrl: '/',
   siteRepo: '/',
-  siteLogo: '/',
+  // siteLogo: '/',
   image: '/',
   socialBanner: '/',
   email: 'karanpg2306@gmail.com',
