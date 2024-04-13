@@ -5,13 +5,7 @@ import SocialIcon from '@/components/social-icons'
 export default function Footer() {
   return (
     <footer>
-      <img 
-        width={500} 
-        height={500} 
-        className="mx-auto"
-        src="https://markmanson.net/wp-content/themes/mm-main/images/two-phones-vertical-blue-background-opt-2.png" 
-        alt="logo" 
-      />
+      
       <div className="mt-16 flex flex-col items-center">
       {/* <div className="my-5 flex flex items-center opacity-60">Listen Now  */}
       {/* <span className="w-10 h-5 bg-[url('https://snippets.alexandru.so/squiggle.svg')] mb-2 ml-1"></span>  */}

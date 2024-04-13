@@ -198,6 +198,20 @@
 //   )
 // }
 
+    // <div>
+    //   <form onSubmit={handleSubscription}>
+    //     <input
+    //       type="email"
+    //       placeholder="Enter your email"
+    //       value={email}
+    //       onChange={(e) => setEmail(e.target.value)}
+    //       required
+    //     />
+    //     <button type="submit">Subscribe</button>
+    //   </form>
+    //   <ToastContainer />
+    // </div>
+
 import { useState, FormEvent } from 'react';
 import { useRouter } from 'next/router';
 import { ToastContainer, toast } from 'react-toastify';
@@ -241,64 +255,102 @@ export default function Home() {
     }
   };
 
-  return (
-    // <div>
-    //   <form onSubmit={handleSubscription}>
-    //     <input
-    //       type="email"
-    //       placeholder="Enter your email"
-    //       value={email}
-    //       onChange={(e) => setEmail(e.target.value)}
-    //       required
-    //     />
-    //     <button type="submit">Subscribe</button>
-    //   </form>
-    //   <ToastContainer />
-    // </div>
-    
+  return (  
+    // <>
+    //   <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
+    //    <ToastContainer />
+    //    <div className="relative flex-col justify-center items-center py-20 w-full">
+    //      <section className="bg-white dark:bg-gray-900">
+    //        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+    //          <div className="mx-auto max-w-screen-md text-center">
+    //            <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl  dark:text-white text-center">5 minutes can change your life.</h2>
+    //            <p className="mx-auto max-w-2xl font-semibold text-gray-500 text-center dark:text-gray-400 mb-10">Your Weekly Spark
+    //               5 minutes can change your life.
+    //               We provide you with our weekly share of tech-news,quests and inspiring anecdotes from our fellow adventurers.
+    //               So let's ignite our potential together! 💫
+    //            </p>
+    //            <p className="mx-auto text-sm mb-8 max-w-2xl text-gray-500 md:mb-5 text-center dark:text-gray-400">
+    //            We will not promise to be regular but when we go out and send it off, we garantee that it will be cool and useful, we mean It's <em>short</em>, <em>visual</em> and above all it's a Nation 😺
+    //            </p>
+    //            <form onSubmit={handleSubscription}>
+    //                <div className=  "items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+    //                    <div className="relative w-full">
+    //                        <label htmlFor="email" className="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
+    //                        <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+    //                            <svg className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+    //                        </div>
+    //                        <input className="outline-none transition-all duration-700 block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-200 rounded-lg sm:rounded-none sm:rounded-l-lg focus:ring-gray-200 focus:bg-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-800 border-0 dark:focus:bg-gray-800" placeholder="in case.., ur email goes here 😁" type="email"  
+    //                        value={email}
+    //                        onChange={(e) => setEmail(e.target.value)}
+    //                        required                                                                                                                                                id="EMAIL" name="EMAIL" autoComplete="on" data-required="true" 
+    //                        />
+    //                    </div>
+    //                    <div>
+    //                        <button type="submit" className="transition duration-700 py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Subscribe</button>
+    //                    </div>
+    //                </div>
+    //                <div className="mx-auto max-w-screen-sm text-sm text-center text-gray-500 newsletter-form-footer dark:text-gray-300">By joining, you agree to join the nation and be one of us 👉 we wrote a&nbsp;
+    //                 <Link href="/" className="font-medium text-primary-600 dark:text-primary-500 hover:underline">Manifesto</Link> where we agree to some facts.
+    //                <Link href="/" className="font-medium text-primary-600 dark:text-primary-500 hover:underline">Manifesto</Link> where we agree to some facts.
+    //                </div>
+    //            </form>
+    //          </div>
+    //        </div>
+    //      </section>
+    //    </div>
+    // </>
+
     <>
-      <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
-       <ToastContainer />
-       <div className="relative flex-col justify-center items-center py-20 w-full">
-         <section className="bg-white dark:bg-gray-900">
-           <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-             <div className="mx-auto max-w-screen-md text-center">
-               <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white text-center">5 minutes can change your life.</h2>
-               <p className="mx-auto max-w-2xl font-semibold text-gray-500 text-center dark:text-gray-400 mb-10">Your Weekly Spark
-                  5 minutes can change your life.
-                  We provide you with our weekly share of tech-news,quests and inspiring anecdotes from our fellow adventurers.
-                  So let's ignite our potential together! 💫
-               </p>
-               {/* <p className="mx-auto text-sm mb-8 max-w-2xl text-gray-500 md:mb-5 text-center dark:text-gray-400">
-               We will not promise to be regular but when we go out and send it off, we garantee that it will be cool and useful, we mean It's <em>short</em>, <em>visual</em> and above all it's a Nation 😺
-               </p> */}
-               <form onSubmit={handleSubscription}>
-                   <div className=  "items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
-                       <div className="relative w-full">
-                           <label htmlFor="email" className="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
-                           <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                               <svg className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-                           </div>
-                           <input className="outline-none transition-all duration-700 block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-200 rounded-lg sm:rounded-none sm:rounded-l-lg focus:ring-gray-200 focus:bg-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-800 border-0 dark:focus:bg-gray-800" placeholder="in case.., ur email goes here 😁" type="email"  
-                           value={email}
-                           onChange={(e) => setEmail(e.target.value)}
-                           required                                                                                                                                                id="EMAIL" name="EMAIL" autoComplete="on" data-required="true" 
-                           />
-                       </div>
-                       <div>
-                           <button type="submit" className="transition duration-700 py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Subscribe</button>
-                       </div>
-                   </div>
-                   {/* <div className="mx-auto max-w-screen-sm text-sm text-center text-gray-500 newsletter-form-footer dark:text-gray-300">By joining, you agree to join the nation and be one of us 👉 we wrote a&nbsp; */}
-                   {/* <Link href="/" className="font-medium text-primary-600 dark:text-primary-500 hover:underline">Manifesto</Link> where we agree to some facts.
-                   <Link href="/" className="font-medium text-primary-600 dark:text-primary-500 hover:underline">Manifesto</Link> where we agree to some facts.
-                   </div> */}
-               </form>
-             </div>
-           </div>
-         </section>
-       </div>
-    </>
+    <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
+    <ToastContainer />
+    <div className="relative flex-col justify-center items-center w-full">
+      <section className="bg-white dark:bg-gray-900">
+        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-0 lg:px-6">
+          <div className="mx-auto max-w-screen-2xl text-center flex flex-col lg:flex-row justify-center items-center">
+            <div className=" lg:pr-12 lg:mb-0">
+              <img
+                width={500}
+                height={500}
+                className="mx-auto"
+                src="/static/images/mobile.png"
+                alt="mobile"
+              />
+            </div>
+            <div className="lg:w-1/2">
+              <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl  dark:text-white text-center">5 minutes can change your life.</h2>
+              <p className="mx-auto max-w-2xl font-semibold text-gray-500 text-center dark:text-gray-400 mb-10">Your Weekly Spark
+                5 minutes can change your life.
+                We provide you with our weekly share of tech-news,quests and inspiring anecdotes from our fellow adventurers.
+                So let's ignite our potential together! 💫
+              </p>
+              <form onSubmit={handleSubscription}>
+                <div className=  "items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+                    <div className="relative w-full">
+                        <label htmlFor="email" className="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
+                        <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                            <svg className="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                        </div>
+                        <input className="outline-none transition-all duration-700 block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-200 rounded-lg sm:rounded-none sm:rounded-l-lg focus:ring-gray-200 focus:bg-gray-300 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-gray-800 border-0 dark:focus:bg-gray-800" placeholder="in case.., ur email goes here 😁" type="email"  
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required                                                                                                                                                id="EMAIL" name="EMAIL" autoComplete="on" data-required="true" 
+                        />
+                    </div>
+                    <div>
+                        <button type="submit" className="transition duration-700 py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Subscribe</button>
+                    </div>
+                </div>
+                {/* <div className="mx-auto max-w-screen-sm text-sm text-center text-gray-500 newsletter-form-footer dark:text-gray-300">By joining, you agree to join the nation and be one of us 👉 we wrote a&nbsp;
+                 <Link href="/" className="font-medium text-primary-600 dark:text-primary-500 hover:underline">Manifesto</Link> where we agree to some facts.
+                <Link href="/" className="font-medium text-primary-600 dark:text-primary-500 hover:underline">Manifesto</Link> where we agree to some facts.
+                </div> */}
+            </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </>
     
   );
 }

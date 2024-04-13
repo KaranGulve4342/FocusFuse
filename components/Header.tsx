@@ -7,7 +7,7 @@ import ThemeSwitch from './ThemeSwitch'
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between py-10">
+    <header className="flex items-center justify-between py-1 mt-9">
        <div>
           <Link href='/' className="flex space-x-1">
 
@@ -44,7 +44,7 @@ const Header = () => {
             <Link
               key={link.title}
               href={link.href}
-              className="relative after:absolute after:bg-gray-200 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300 p-1 font-medium text-gray-900 dark:text-gray-100 sm:px-0 sm:mx-2 text-xl"
+              className="relative after:absolute after:bg-gray-200 after:bottom-0 after:left-0 after:h-[2px] after:w-full after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300 p-1 text-gray-900 dark:text-gray-100 sm:px-0 sm:mx-2 font-bold text-lg"
             >
               {link.title}
             </Link>
