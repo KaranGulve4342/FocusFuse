@@ -7,10 +7,10 @@ import Image from 'next/image'
 const memberList = [
     {
         name: "Kartik Kunjekar",
-        about: "SE/Co-founder",
+        about: "Curator",
         rank: "minister",
-        nation_title: "The fitst citizen & the real Samurai",
-        img: "/static/images/karan.png",
+        nation_title: "Curator",
+        img: "/static/images/kartik.jpg",
         linkedin: "https://linkedin.com/in/kartik-kunjekar-6a8370258",
         twitter: "https://twitter.com/frostprince_3",
         facebook: "",
@@ -18,9 +18,9 @@ const memberList = [
     },
     {
         name: "Sanchit Chavan",
-        about: "SE/Co-founder",
+        about: "Editer",
         rank: "minister",
-        nation_title: "The fitst citizen & the real Samurai",
+        nation_title: "Editor",
         img: "/static/images/Sanchit.jpg",
         linkedin: "https://linkedin.com/in/sanchit-chavan-122292258",
         twitter: "https://twitter.com/Sanchitchavan36",
@@ -29,9 +29,9 @@ const memberList = [
     },
     {
         name: "Karan Gulve",
-        about: "SE/Co-founder",
+        about: "Developer",
         rank: "minister",
-        nation_title: "The fitst citizen & the real Samurai",
+        nation_title: "Developer",
         img: "/static/images/Profile photo.png",
         linkedin: "https://linkedin.com/in/karangulve4342",
         twitter: "https://twitter.com/KaranGulve4342",
@@ -61,18 +61,26 @@ export default function Projects() {
   <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
       <div className="mx-auto mb-8 max-w-screen-sm lg:mb-16">
           <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Team</h2>
-          <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">This is just the board of members 👩‍👩‍👦‍👦 all those people who have been on the show or contributed to it 🏅 along side with their ranks/titles 'cuz they all belong to a nation ❤️ and they all citizens 😀</p>
+          <p className="font-light text-gray-500 sm:text-lg dark:text-gray-400">We're just engineering students attempting to make waves in a world where everyone is influential in some capacity.
+We launched this project with the goal of venturing into the unexplored territories in a student's life, inspiring others, and finding inspiration in their tales for ourselves. 
+We hope that everyone who reads us will benefit from this newsletter.</p>
       </div> 
       <div className="grid gap-12 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 ">
          {
             memberList.map(member => (
                 <div className="text-center text-gray-500 dark:text-gray-400">
-               <Image width="200" height="200"  className="mx-auto mb-4 w-35 h-50 rounded-full" src={member.img} alt="Bonnie Avatar"/>
+               {/* <Image width="200" height="200"  className="mx-auto mb-4 w-35 h-50 rounded-full" src={member.img} alt="Avatar"/> */}
+                <img
+                    className="mx-auto mb-4 w-35 h-50 rounded-full"
+                    src={member.img}
+                    alt="Avatar"
+                    style={{ width: '200px', height: '235px' }}
+                />
               <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   <a href="#">{member.name}</a>
               </h3>
-              <p className='text-sm px-[3px] py-[3px] bg-gray-800 dark:bg-gray-100 text-gray-100 dark:text-gray-800 rounded-lg cursor-pointer'>{member.about}</p>
-              {/* <p className="capitalize">{member.nation_title}</p> */}
+              {/* <p className='text-sm px-[3px] py-[3px] bg-gray-800 dark:bg-gray-100 text-gray-100 dark:text-gray-800 rounded-lg cursor-pointer'>{member.about}</p> */}
+              <p className="capitalize font-bold">{member.nation_title}</p>
               <ul className="flex justify-center mt-4 space-x-4">
               {!member.facebook ? null : <li>
                       <a href={member.facebook} className="text-[#39569c] hover:text-gray-900 dark:hover:text-white">

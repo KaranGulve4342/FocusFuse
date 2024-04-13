@@ -263,14 +263,17 @@ export default function Home() {
          <section className="bg-white dark:bg-gray-900">
            <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
              <div className="mx-auto max-w-screen-md text-center">
-               <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white text-center">Our Newsletter ≠  Any Others</h2>
-               <p className="mx-auto max-w-2xl font-semibold text-gray-500 text-center dark:text-gray-400">Join Now .. btw it's free 'cuz u know? we r not selling yogurt here, we just talk.
+               <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl dark:text-white text-center">5 minutes can change your life.</h2>
+               <p className="mx-auto max-w-2xl font-semibold text-gray-500 text-center dark:text-gray-400 mb-10">Your Weekly Spark
+                  5 minutes can change your life.
+                  We provide you with our weekly share of tech-news,quests and inspiring anecdotes from our fellow adventurers.
+                  So let's ignite our potential together! 💫
                </p>
-               <p className="mx-auto text-sm mb-8 max-w-2xl text-gray-500 md:mb-5 text-center dark:text-gray-400">
+               {/* <p className="mx-auto text-sm mb-8 max-w-2xl text-gray-500 md:mb-5 text-center dark:text-gray-400">
                We will not promise to be regular but when we go out and send it off, we garantee that it will be cool and useful, we mean It's <em>short</em>, <em>visual</em> and above all it's a Nation 😺
-               </p>
+               </p> */}
                <form onSubmit={handleSubscription}>
-                   <div className="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+                   <div className=  "items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
                        <div className="relative w-full">
                            <label htmlFor="email" className="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email address</label>
                            <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
@@ -286,10 +289,10 @@ export default function Home() {
                            <button type="submit" className="transition duration-700 py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Subscribe</button>
                        </div>
                    </div>
-                   <div className="mx-auto max-w-screen-sm text-sm text-center text-gray-500 newsletter-form-footer dark:text-gray-300">By joining, you agree to join the nation and be one of us 👉 we wrote a&nbsp;
+                   {/* <div className="mx-auto max-w-screen-sm text-sm text-center text-gray-500 newsletter-form-footer dark:text-gray-300">By joining, you agree to join the nation and be one of us 👉 we wrote a&nbsp; */}
+                   {/* <Link href="/" className="font-medium text-primary-600 dark:text-primary-500 hover:underline">Manifesto</Link> where we agree to some facts.
                    <Link href="/" className="font-medium text-primary-600 dark:text-primary-500 hover:underline">Manifesto</Link> where we agree to some facts.
-                   <Link href="/" className="font-medium text-primary-600 dark:text-primary-500 hover:underline">Manifesto</Link> where we agree to some facts.
-                   </div>
+                   </div> */}
                </form>
              </div>
            </div>
