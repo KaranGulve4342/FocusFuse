@@ -6,7 +6,6 @@ module.exports = {
     amd: true,
     node: true,
     es6: true,
-    ignoreDuringBuilds: true,
 
   },
   plugins: ['@typescript-eslint'],

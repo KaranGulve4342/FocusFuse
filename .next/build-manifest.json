@@ -45,6 +45,11 @@
       "static/chunks/main.js",
       "static/chunks/pages/blog/[...slug].js"
     ],
+    "/nation": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/nation.js"
+    ],
     "/tags/[tag]": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
