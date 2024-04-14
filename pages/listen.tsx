@@ -11,7 +11,7 @@ export default function Listen() {
       <div className="mt-20">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="opacity-[.04] text-[130px] font-extrabold leading-9 text-gray-900 dark:text-gray-100 sm:text-[150px] sm:leading-10 md:text-[200px] md:leading-14">
-            Listen
+            Hustle
           </h1>
         </div>
           <h1 className="text-2xl font-bold">Recently Published</h1>

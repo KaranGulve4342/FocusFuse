@@ -137,16 +137,16 @@ export default function ListLayout({
                       <dl>
                     <dt className="sr-only">Published on</dt>
                     <dd className="text-sm italic text-gray-600 dark:text-gray-200">
-                      <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time>
+                      {/* <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time> */}
                     </dd>
                   </dl>
                       <div className="flex flex-wrap my-2">
                        <span className="text-sm capitalize text-gray-600 dark:text-gray-500">Tags:&nbsp;</span>
                         {tags.map((tag) => (
                           <>
-<Tag key={tag} text={tag} />
-<span className='text-gray-500 -mt-[2px]'> •&nbsp;</span>
-</>
+                            <Tag key={tag} text={tag} />
+                            <span className='text-gray-500 -mt-[2px]'> •&nbsp;</span>
+                          </>
                         ))}
                       </div>
                       
@@ -158,10 +158,10 @@ export default function ListLayout({
                 </article>
                 {/* </Link> */}
 
-                    <div className={`absolute bg-green-400 top-15 -left-2 transform rotate-[270deg] origin-top-left text-gray-600 dark:text-gray-800 text-[12px] px-1 font-semibold py-[.2px] shadow-lg rounded-md hover:shodow-xl transition duration-400 ${tags.includes("ai") ? "!bg-red-500 text-red-100 dark:bg-red-600 dark:text-red-50" : tags.includes("front") ? "bg-indigo-500 text-indigo-100 dark:bg-indigo-700 dark:!text-indigo-50": ""}`}>
+                    {/* <div className={`absolute bg-green-400 top-15 -left-2 transform rotate-[270deg] origin-top-left text-gray-600 dark:text-gray-800 text-[12px] px-1 font-semibold py-[.2px] shadow-lg rounded-md hover:shodow-xl transition duration-400 ${tags.includes("ai") ? "!bg-red-500 text-red-100 dark:bg-red-600 dark:text-red-50" : tags.includes("front") ? "bg-indigo-500 text-indigo-100 dark:bg-indigo-700 dark:!text-indigo-50": ""}`}>
 
                     {tags.includes("ai") ? "Artificial Intellgence" : tags.includes("front") ? "Tech": "Others"}
-                    </div>
+                    </div> */}
               </li>
             )
           })}

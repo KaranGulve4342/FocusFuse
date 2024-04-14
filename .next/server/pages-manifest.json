@@ -2,6 +2,9 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/nation": "pages/nation.js",
+  "/blog": "pages/blog.js",
+  "/blog/[...slug]": "pages/blog/[...slug].js",
+  "/tags/[tag]": "pages/tags/[tag].js",
+  "/404": "pages/404.js",
   "/": "pages/index.js"
 }
