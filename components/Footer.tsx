@@ -37,12 +37,16 @@ export default function Footer() {
 
 
         <div className="mb-3 flex space-x-4">
-          <SocialIcon kind="soundcloud" href={siteMetadata.soundcloudLink} size={6} />
+          {/* <SocialIcon kind="soundcloud" href={siteMetadata.soundcloudLink} size={6} />
           <SocialIcon kind="applePodcasts" href={siteMetadata.appleLink} size={6} />
           <SocialIcon kind="googlePodcasts" href={siteMetadata.googleLink} size={6} />
           <SocialIcon kind="spotify" href={siteMetadata.spotifyLink} size={6} />
           <SocialIcon kind="amazon" href={siteMetadata.amazonLink} size={6} />
-          <SocialIcon kind="youtube" href={siteMetadata.youtube} size={6} />
+          <SocialIcon kind="youtube" href={siteMetadata.youtube} size={6} /> */}
+          <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size={6} />
+          <SocialIcon kind="twitter" href={siteMetadata.twitter} size={6} />
+          
+
         </div>
         <div className="mb-0 flex space-x-1 text-sm text-gray-500 dark:text-gray-400">
           <Link href="/">{siteMetadata.title}</Link>
@@ -50,7 +54,7 @@ export default function Footer() {
           {/* <div>{`• - `}</div> */}
         </div>
         <div className="mb-8 text-center text-sm text-gray-500 dark:text-gray-400">
-          <span>Podcast & Blog By </span>
+          <span>Design and created by  </span>
           <Link href={siteMetadata.linkedin}>
           <span className='dark:text-slate-300 text-slate-900 font-bold dark:font-normal hover:opacity-50 transition-all durtation-400'>{siteMetadata.author}</span>
           </Link>

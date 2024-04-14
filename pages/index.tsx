@@ -315,6 +315,18 @@ export default function Home() {
                 src="/static/images/mobile.png"
                 alt="mobile"
               />
+              {/* <div className=" lg:pr-12 lg:mb-0">
+              <video
+  width={500}
+  height={500}
+  autoPlay
+  loop
+  muted
+  playsInline
+  controls  // Add controls attribute
+  src="https://res.cloudinary.com/dngvge2sb/video/upload/v1713068825/mobile_gmvjgt.mp4"
+/>
+              </div> */}
             </div>
             <div className="lg:w-1/2">
               <h2 className="mb-4 text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl  dark:text-white text-center">5 minutes can change your life.</h2>
